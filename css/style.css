@@ -10,7 +10,14 @@
 .start-icon{
     width: 45px;
     height: auto;
+    transition: all 2s;
 }
+
+.start-icon:hover{
+    width: 90px;
+    background-color: magenta;
+}
+
 
 a,#pie{
     font-family: 'Shadows Into Light', cursive;
@@ -37,12 +44,93 @@ a,#pie{
 .info-pie p{
     margin: 0;
     padding: 0;
+    transition: all 2xs;
 }
+
+.info-pie p:hover{
+  text-decoration: underline;
+  background-color: #ffb2dd;
+}
+
 
 .pie-icon{
     width: 145%;
 }
 
+
+@keyframes atencion1 {
+  0%{
+    transform: translate(0,-10px);
+  }
+
+  15%{
+    transform: translate(0,-40px);
+  }
+
+  30%{
+    transform: translate(0,-10px);
+  }
+
+  45%{
+    transform: translate(0,20px);
+  }
+  60%{
+    transform: translate(0,50px);
+  }
+  75%{
+    transform: translate(0,20px);
+  }
+
+  90%{
+    transform: translate(0,0px);
+  }
+  100%{
+    transform: translate(0,-5px);
+  }
+
+}
+
+.footer-icon-animation1{
+  animation: atencion1 3s linear 0s infinite;
+
+}
+
+@keyframes atencion2 {
+  0%{
+    transform: translate(0,10px);
+  }
+
+  15%{
+    transform: translate(0,40px);
+  }
+
+  30%{
+    transform: translate(0,10px);
+  }
+
+  45%{
+    transform: translate(0,-20px);
+  }
+  60%{
+    transform: translate(0,-50px);
+  }
+  75%{
+    transform: translate(0,-20px);
+  }
+
+  90%{
+    transform: translate(0,0px);
+  }
+  100%{
+    transform: translate(0,5px);
+  }
+
+}
+
+.footer-icon-animation2{
+  animation: atencion2 3s linear 0s infinite;
+
+}
 
 #portfolio .portfolio-item {
     max-width: 26rem;
